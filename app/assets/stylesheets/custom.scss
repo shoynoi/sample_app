@@ -6,7 +6,7 @@
 
 $gray-medium-light: #eaeaea;
 
-@mixin box-sizing{
+@mixin box_sizing {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -29,7 +29,7 @@ textarea {
 
 .center {
   text-align: center;
-  h1{
+  h1 {
     margin-bottom: 10px;
   }
 }
@@ -106,33 +106,33 @@ footer {
 
 /* miscellaneous */
 
-.debug_dump{
+.debug_dump {
   clear: both;
   float: left;
   width: 100%;
   margin-top: 45px;
-  @include box-sizing;
+  @include box_sizing;
 }
 
 /* sidebar */
 
-aside{
-  section.user_info{
+aside {
+  section.user_info {
     margin-top: 20px;
   }
-  section{
+  section {
     padding: 10px 0;
     margin-top: 20px;
     &:first-child{
       border: 0;
       padding-top: 0;
     }
-    span{
+    span {
       display: black;
       margin-bottom: 3px;
       line-height: 1;
     }
-    h1{
+    h1 {
       font-size: 1.4em;
       text-align: left;
       letter-spacing: -1px;
@@ -142,16 +142,16 @@ aside{
   }
 }
 
-.gravatar{
+.gravatar {
   float: left;
   margin-right: 10px;
 }
 
-.gravatar_edit{
+.gravatar_edit {
   margin-top: 15px;
 }
 
-.stats{
+.stats {
   overflow: auto;
   margin-top: 0;
   padding: 0;
@@ -164,12 +164,12 @@ aside{
       padding-left: 0;
       border: 0;
     }
-    &:hover{
+    &:hover {
       text-decoration: none;
       color: blue;
     }
   }
-  strong{
+  strong {
     display: block;
   }
 }
@@ -185,24 +185,24 @@ aside{
   }
 }
 
-.users.follow{
+.users.follow {
   padding: 0;
 }
 
 /* forms */
 
-input, textarea, select, .uneditable-input{
+input, textarea, select, .uneditable-input {
   border: 1px solid #bbb;
   width: 100%;
   margin-bottom: 15px;
-  @include box-sizing;
+  @include box_sizing;
 }
 
-input{
+input {
   height: auto !important;
 }
 
-#error_explanation{
+#error_explanation {
   color: red;
   ul{
     color: red;
@@ -210,14 +210,14 @@ input{
   }
 }
 
-.field_with_errors{
+.field_with_errors {
   @extend .has-error;
   .form_control{
     color: $state-danger-text;
   }
 }
 
-.checkbox{
+.checkbox {
   margin-top: -10px;
   margin-bottom: 10px;
   span{
@@ -226,16 +226,16 @@ input{
   }
 }
 
-#session_remember_me{
+#session_remember_me {
   width: auto;
   margin-left: 0;
 }
 
 /* Users index */
-.users{
+.users {
   list-style: none;
   margin: 0;
-  li{
+  li {
     overflow: auto;
     padding: 10px 0;
     border-bottom: 1px solid $gray-lighter;
